@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  src: url("/font/BarlowSemiCondensed-Medium.ttf"), url("/font/BarlowSemiCondensed-SemiBold.ttf");
+}
+body {
+  font-family: "Barlow Semi Condensed";
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #ecf2f8;
+}
+
+.app {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 70% 23%;
+  gap: 70px;
+  padding: 50px 0;
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 25px;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #bebebe;
+  padding: 20px 30px;
+}
+
+.daniel {
+  background-color: #7541c8;
+  grid-column: span 2;
+}
+
+.jonathan {
+  background-color: #48556a;
+}
+
+.jeanette {
+  background-color: #fff;
+}
+
+.patrick {
+  background-color: #19212e;
+  grid-column: span 2;
+}
+
+.kira {
+  background-color: #fff;
+}
+
+.user-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.user-pic img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.username, .verified-graduate {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.verified-graduate {
+  opacity: 0.3;
+}
+
+.user-testimonial {
+  color: #48556a;
+  margin-bottom: 35px;
+  font-size: 1.71rem;
+  font-weight: 600;
+}
+
+.comment {
+  color: #48556a;
+  font-weight: 500;
+  line-height: 20px;
+  opacity: 0.7;
+}/*# sourceMappingURL=main.css.map */
