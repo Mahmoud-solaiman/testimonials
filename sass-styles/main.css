@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #ecf2f8;
+  align-items: center;
 }
 
 .app {
@@ -25,7 +26,6 @@ body {
   display: grid;
   grid-template-columns: 70% 23%;
   gap: 70px;
-  padding: 50px 0;
 }
 
 .left {
@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 20px #bebebe;
   padding: 20px 30px;
 }
@@ -43,6 +43,9 @@ body {
 .daniel {
   background-color: #7541c8;
   grid-column: span 2;
+  background-image: url("../imgs/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% top;
 }
 
 .jonathan {
@@ -51,6 +54,16 @@ body {
 
 .jeanette {
   background-color: #fff;
+}
+.jeanette .user-info div .username, .jeanette .verified-graduate {
+  color: #48556a;
+}
+.jeanette .user-testimonial, .jeanette .comment {
+  color: #48556a;
+  font-weight: 600;
+}
+.jeanette .comment {
+  font-weight: 500;
 }
 
 .patrick {
@@ -61,38 +74,68 @@ body {
 .kira {
   background-color: #fff;
 }
+.kira .user-info div .username, .kira .verified-graduate {
+  color: #48556a;
+}
+.kira .user-testimonial, .kira .comment {
+  color: #48556a;
+  font-weight: 600;
+}
+.kira .comment {
+  font-weight: 500;
+}
 
 .user-info {
   display: flex;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .user-pic img {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
 .username, .verified-graduate {
+  color: #cfcfcf;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
 .verified-graduate {
   opacity: 0.3;
+  font-size: 1rem;
 }
 
 .user-testimonial {
-  color: #48556a;
-  margin-bottom: 35px;
-  font-size: 1.71rem;
-  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .comment {
-  color: #48556a;
+  color: #cfcfcf;
   font-weight: 500;
   line-height: 20px;
-  opacity: 0.7;
+  opacity: 70%;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .left {
+    grid-template-columns: 100%;
+  }
+  .left div {
+    grid-column: span 1;
+  }
 }/*# sourceMappingURL=main.css.map */
